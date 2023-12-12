@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  todolistapp:
+    #image: fagyesz/todolistapp:latest
+    image: fagyesz/rtt:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - /path/to/local/directory:/app/data
+volumes:
+  localdata:
+#docker-compose pull
+#docker-compose up -d
